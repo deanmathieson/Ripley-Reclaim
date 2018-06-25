@@ -30,37 +30,8 @@
 </head>
 <body>
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0&appId=276515055728573&autoLogAppEvents=1';
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 	<div data-src="images/bgsmall.jpg" class="uk-width-1-1" uk-img uk-height-viewport="offset-bottom: 30" uk-parallax="bgy: -100"></div>
-	<div class="uk-dark" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-
-		<nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-			<div class="uk-width-1-1">
-
-				<ul class="uk-navbar-nav">
-					<li class="uk-active uk-width-1-4"><a href="#">Home</a></li>
-					<li class="uk-width-1-4">
-						<a href="#">Catalogue</a>
-						<div class="uk-navbar-dropdown">
-							<ul class="uk-nav uk-navbar-dropdown-nav">
-								<li><a href="#">Doors</a></li>
-								<li><a href="#">Potatoes</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="uk-width-1-4"><a href="#">About Us</a></li>
-					<li class="uk-width-1-4"><a href="#">Contact Us</a></li>
-				</ul>
-
-			</div>
-		</nav>
-	</div>
+	<div w3-include-html="nav.html"/>
 	<div class="uk-container" style="margin:0 auto">
 		<!--<h1 class="uk-heading-divider uk-text-center">Welcome to Ripley Reclaim!</h1>!-->
 		<div class="uk-section uk-dark">
@@ -115,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 		<div class="uk-section uk-dark">
 			<h3 class="uk-text-center">Contact Us</h3>
 			<hr>
@@ -140,13 +111,17 @@
 						<a href="tel:123456789">123456789</a> 
 						<hr>
 						<h4>Facebook</h4>
-						<div class="fb-like" data-href="https://www.facebook.com/Ripley-Reclaim-and-Tudor-Beams-562545820481541/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+						<div class="fb-like" 
+						data-href="https://www.your-domain.com/your-page.html" 
+						data-layout="standard" 
+						data-action="like" 
+						data-show-faces="true">
 					</div>
-					<div class="uk-width-1-3">
-						<h4>Opening Times</h4>
-						<p>Monday to Saturday <span style="float:right">9am - 5pm</span></p>
-						<p>Sunday <span style="float:right">10am - 5pm</span></p>
-					</div>
+				</div>
+				<div class="uk-width-1-3">
+					<h4>Opening Times</h4>
+					<p>Monday to Saturday <span style="float:right">9am - 5pm</span></p>
+					<p>Sunday <span style="float:right">10am - 5pm</span></p>
 				</div>
 			</div>
 		</div>
